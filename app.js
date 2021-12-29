@@ -3,7 +3,7 @@ router = require('koa-router')()
 // const DB = require('./assets/js/mongoDB.db.js')
 const app = new Koa()
 const webSocket = require('ws')
-const ws = new webSocket.Server({port: 8005})
+const ws = new webSocket.Server({port: 9005})
 let clients = []
 ws.on('connection',(client,req)=> {
   
